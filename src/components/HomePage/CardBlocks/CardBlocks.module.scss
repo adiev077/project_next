@@ -1,0 +1,98 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.product_catalog {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .catalog {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    max-width: 1440px !important;
+    margin-right: auto;
+    margin-left: auto;
+    flex-wrap: wrap;
+
+      .card {
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+        width: 470px;
+        height: 219px;
+        background-color: $header-dark-bg;
+        padding: 24px 16px;
+
+        &_text {
+          max-width: 41%;
+          width: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0;
+          text-align: left;
+
+          &_p {
+            margin: 0;
+            height: auto;
+            color: $block-text;
+            font-size: 16px;
+            font-weight: 400;
+            transition: 0.8s;
+          }
+
+          &_head {
+            margin: 0;
+            line-height: 24px;
+            color: $block-text-head;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: $block-font-fam;
+          }
+
+        }
+
+        .cardBtnImg {
+          max-width: 100%;
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: right;
+          position: relative;
+
+          .card_image {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+          }
+
+          &_btn {
+            display: flex;
+            justify-content: center;
+            line-height: 8px;
+            position: relative;
+            top: 5px;
+            left: 80px;
+            color: $active-text-color;
+            font-size: 18px;
+            transition: 1s;
+
+            &:hover {
+              transition: 1s;
+              text-decoration: underline $active-text-color;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+

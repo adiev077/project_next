@@ -1,0 +1,82 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.scrollBar {
+  display: flex;
+  justify-content: center;
+
+  .slider_container {
+    padding-top: 70px;
+    width: 1440px;
+    overflow-x: scroll;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    &_list {
+      display: inline-flex;
+      gap: 20px;
+
+      &_slide {
+        height: 500px;
+        width: 420px;
+
+        &_card {
+          margin-right: 20px;
+          transform: translateX(calc(max(1024px, 100vw)/2 - 490px));
+
+          &_content {
+            border-radius: 18px;
+            box-shadow: 2px 4px 7px #00000014;
+            height: 500px;
+            min-width: 400px;
+            overflow: hidden;
+            transition: all .3s cubic-bezier(0,0,.5,1);
+
+            &_text {
+              left: 0;
+              padding: 30px;
+              position: absolute;
+              top: 0;
+              color: $scrollBar-text;
+
+              &_title {
+                font-size: 12px;
+                line-height: 1.33337;
+                font-family: $font-fam;
+              }
+
+              &_paragraph {
+                font-size: 28px;
+                line-height: 1.14286;
+                font-weight: 600;
+                letter-spacing: .007em;
+                padding-top: 24px;
+                font-family: $font-fam;
+              }
+
+            }
+
+            &_bg {
+              height: 100%;
+              width: 100%;
+
+              & img {
+                display: block;
+                object-fit: cover;
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,15 @@
+@import '../../../assets/styles/colors';
+
+
+.swiperBlock {
+  margin-top: 20px;
+  width: 100%;
+  height: 385px;
+  overflow-x: hidden;
+  display: flex;
+
+    .slidesImage {
+      width: 100%;
+      height: 100%;
+    }
+}

@@ -1,0 +1,141 @@
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.mac_cards {
+  padding-top: 24px;
+
+  .mac_cards_container {
+    padding: 24px 0;
+
+    .mac_cards_container_head {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 24px 0;
+      padding: 0 15px;
+
+      &_title {
+        color: $dark-1;
+        font-family: $font-fam;
+        font-size: 50px;
+        font-style: normal;
+        line-height: 55px;
+      }
+
+      &_paragraph {
+        color: $block-text;
+        display: block;
+        font-size: 21px;
+        font-weight: 400;
+        font-family: $font-fam;
+        line-height: 25px;
+        margin: 8px 0;
+      }
+
+      &_btn {
+        color: $active-text-color;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        line-height: 21px;
+
+      }
+
+    }
+
+    .mac_cards_container_list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+      padding: 0 12px;
+
+      &_wrap {
+        height: 580px;
+        width: 702px;
+        position: relative;
+        color: $scrollBar-text;
+
+        &_second {
+          color: $block-text-head !important;
+        }
+
+        &_third {
+          color: $block-text-head !important;
+        }
+
+        &_title {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding-top: 53px;
+          text-align: center;
+
+          &_head {
+            font-size: 40px;
+            font-weight: 500;
+            line-height: 48px;
+            margin-bottom: 8px;
+          }
+
+          &_paragraph {
+            display: block;
+            font-size: 21px;
+            font-weight: 400;
+            letter-spacing: .336px;
+            line-height: 26px;
+            margin-bottom: 10px;
+            max-width: 245px;
+          }
+
+          &_btn {
+            display: flex;
+
+            &_one {
+              color: $mac-cards-color;
+              font-size: 16px;
+              position: static;
+              line-height: 12px;
+              display: flex;
+              align-content: center;
+            }
+
+            &_two {
+              color: $mac-cards-color;
+              font-size: 16px;
+              position: static;
+              line-height: 12px;
+              display: flex;
+              align-content: center;
+            }
+
+          }
+
+        }
+
+        &_image {
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: -1;
+
+          &_img {
+            height: 100%;
+            object-fit: cover;
+            width: 100%;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

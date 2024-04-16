@@ -1,0 +1,180 @@
+@import './../../assets/styles/colors.scss';
+@import './../../assets/styles/fonts.scss';
+
+.general-padding {
+  min-width: 165px;
+  padding: 0 25px;
+}
+
+
+.footerBlock {
+  margin-top: 100px;
+  background-color: $header-dark-bg;
+  font-size: 14px;
+  padding: 48px 15px 8px;
+  font-family: $font-fam;
+
+  .footer_wrap {
+    display: flex;
+    justify-content: center;
+    min-height: 317px;
+
+    &_content {
+      padding: 0 15px;
+      width: 390px;
+
+      &_logo {
+
+        &_img {
+          color: $dark-2;
+          font-weight: 500;
+          line-height: 120%;
+          width: 90px;
+
+          &_i {
+            border-style: none;
+            height: 100%;
+            text-align: left;
+            vertical-align: middle;
+            width: 100%;
+          }
+
+        }
+
+        &_paragraph {
+          color: $dark-3;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 170%;
+          margin-top: 3px;
+        }
+
+      }
+
+      &_links {
+        margin: 16px 0;
+
+        &-img {
+          display: inline-block;
+          height: 20px;
+          margin-right: 8px;
+          width: 20px;
+        }
+
+      }
+
+      &_title {
+        color: $dark-2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        margin: 20px 0 4px;
+      }
+
+      &_paragraph {
+        color: $dark-3;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+      }
+
+    }
+
+  }
+
+  .navBar {
+    display: flex;
+
+    &_products {
+      margin-left: 195px;
+
+      &_title {
+        color: $grey-1;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19px;
+        margin-bottom: 8px;
+      }
+
+      &_list_item {
+        margin-bottom: 2px;
+
+        &_link {
+          color: $block-text;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 25px;
+          margin-bottom: 2px;
+          transition: 0.3s;
+
+          &:hover {
+            transition: 0.3s;
+            color: $hover-text-color;
+          }
+        }
+
+        &_p {
+          color: $block-text;
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 25px;
+          margin-bottom: 2px;
+          transition: 0.3s;
+
+          &:hover {
+            transition: 0.3s;
+            color: $hover-text-color;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+.block {
+  width: 100%;
+  align-items: center;
+  background-color: #2e2e2e;
+  display: flex;
+  height: 56px;
+  justify-content: center;
+
+  &_in {
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 100%;
+
+    &_links {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      &_p {
+        color: #8f8f8f;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17.5px;
+        transition: 0.3s;
+
+        &_span {
+          color: #f3f3f3;
+          font-weight: 700;
+          margin-left: 3px;
+        }
+
+        &:hover {
+          transition: 0.3s;
+          color: $hover-text-color;
+        }
+
+      }
+
+    }
+
+  }
+
+}

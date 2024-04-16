@@ -1,0 +1,58 @@
+@import './../../assets/styles/colors.scss';
+@import './../../assets/styles/fonts.scss';
+
+.headerBlock {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  z-index: 999;
+
+  .globalNav {
+    width: 100%;
+    background-color: $transparent;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: $text-color;
+
+    &_content {
+      height: 54px;
+      width: 996px;
+      align-content: center;
+    }
+
+    &_list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav_item {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: $font-fam;
+        transition: 0.5s;
+
+        &:hover {
+          color: $hover-text-color;
+          transition: 0.5s;
+        }
+      }
+
+      .active {
+        color: $active-text-color;
+        font-size: 12px;
+        font-weight: 500;
+        font-family: $font-fam;
+        transition: 0.5s;
+      }
+
+      .active svg path{
+        fill: $active-text-color;
+      }
+
+    }
+
+  }
+}
